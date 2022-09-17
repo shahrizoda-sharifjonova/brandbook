@@ -1,0 +1,56 @@
+.game{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    @include media(992){
+        padding-top: 0;
+    }
+    @include media(768){
+        padding-bottom: 15px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        background: url(../img/game-bg.png) center / cover no-repeat;
+        width: 100%;
+        top: -30px;
+        height: 100%;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        display: none;
+        @include media(992){
+            display: block;
+        }
+    }
+    &__title{
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 28px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+        text-align: center;
+        @include media(992){
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+    }
+    iframe{
+        max-width: 1200px;
+        width: 100%;
+        height: 500px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: flex;
+        justify-content: center;
+        @include media(992){
+            height: 350px;
+        }
+        @include media(768){
+            height: 290px;
+        }
+    }
+}
