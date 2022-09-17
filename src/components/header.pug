@@ -1,3 +1,24 @@
 mixin header()
-    header.header 
-        p header
+    header.header
+        nav.header__nav.container 
+            .header__left 
+                a(href="index.html").header__logo 
+                    img(src="@img/logo.png", alt="") 
+                a(href="#!").header__btn PLAY
+            .header__content    
+                ul.header__list
+                    li.header__li 
+                        a(href="#rules").header__link Game Rules  
+                    li.header__li 
+                        a(href="#map").header__link Road Map
+                    li.header__li 
+                        a(href="#faq").header__link FAQ
+                    li.header__li 
+                        a(href="#Partners").header__link Partners
+                .header__icons 
+                    a(href="https://telegram.com").header__icon
+                        <i class="fa-brands fa-telegram"></i>
+                    a(href="https://twitter.com").header__icon
+                        <i class="fa-brands fa-twitter"></i>
+                    a(href="https://youtube.com").header__icon
+                        <i class="fa-brands fa-youtube"></i>
